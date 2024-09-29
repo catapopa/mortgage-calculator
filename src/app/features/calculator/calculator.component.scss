@@ -1,0 +1,18 @@
+.mortgage-app {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+
+  app-mortgage-calculator {
+    flex: 0.6; /* Adjust based on preference */
+  }
+
+  app-mortgage-result {
+    flex: 0.4; /* Result component */
+    margin-left: 20px; /* Space between form and result */
+    padding: 20px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+}

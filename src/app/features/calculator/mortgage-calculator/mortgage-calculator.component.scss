@@ -1,0 +1,41 @@
+.result-container {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-left: 20px;
+  max-width: 400px;
+
+  h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333333;
+  }
+
+  .result-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #e0e0e0;
+
+    span {
+      font-size: 16px;
+      color: #666666;
+    }
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  .currency {
+    font-weight: bold;
+    color: #007bff;
+  }
+
+  .percentage {
+    color: #28a745;
+    font-weight: bold;
+  }
+}

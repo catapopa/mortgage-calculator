@@ -1,0 +1,11 @@
+<div class="calculator-container">
+  <h1>Mortgage Calculator</h1>
+
+  <app-mortgage-calculator-form (mortgageData)="handleMortgageData($event)" />
+
+  <app-mortgage-calculator
+    [monthlyPayment]="monthlyPayment"
+    [debtToIncome]="debtToIncome"
+    [loanToValue]="loanToValue"
+  />
+</div>

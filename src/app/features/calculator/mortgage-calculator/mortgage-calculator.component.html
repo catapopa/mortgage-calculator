@@ -1,0 +1,17 @@
+<div class="result-container">
+  <h3>Your Mortgage Calculation</h3>
+  <div class="result-item">
+    <span>Monthly Payment:</span>
+    <span class="currency">{{
+      monthlyPayment | currency : "EUR" : "symbol" : "1.2-2"
+    }}</span>
+  </div>
+  <div class="result-item">
+    <span>Debt to Income:</span>
+    <span class="percentage">{{ debtToIncome | number : "1.2-2" }}%</span>
+  </div>
+  <div class="result-item">
+    <span>Loan to Value:</span>
+    <span class="percentage">{{ loanToValue | number : "1.2-2" }}%</span>
+  </div>
+</div>
