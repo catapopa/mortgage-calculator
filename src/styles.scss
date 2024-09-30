@@ -1,4 +1,5 @@
-html,
+@import url("colors.scss");
+
 body {
   height: 100%;
   margin: 0;
@@ -6,9 +7,8 @@ body {
 }
 
 body {
-  background: linear-gradient(to right, transparent, #77a5fb),
+  background: linear-gradient(to right, #004bdf1a, #77a5fb),
     linear-gradient(to bottom, transparent, #aed6f8);
-  background-blend-mode: multiply;
   font-family: "Helvetica", sans-serif;
 }
 
@@ -22,61 +22,57 @@ app-root {
 }
 
 // Global styles for buttons
-
 button {
   padding: 10px 20px;
   border: none;
   font-size: 16px;
   border-radius: 20px;
   cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 button.primary-button {
-  background-color: #194dfa;
-  color: white;
-  transition: background-color 0.3s ease;
+  background-color: var(--primary-color);
+  color: var(--text-primary-color);
 
   &:hover {
-    background-color: #143dbf;
+    background-color: var(--primary-color-hover);
   }
 
   &:disabled {
-    background-color: #cccccc;
+    background-color: var(--secondary-color-hover);
     cursor: not-allowed;
   }
 }
 
 button.secondary-button {
-  background-color: white;
-  color: #194dfa;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  background-color: var(--secondary-color);
+  color: var(--text-secondary-color);
 
   &:hover {
-    background-color: #cccccc;
-    color: #194dfa;
+    background-color: var(--secondary-color-hover);
+    color: var(--text-secondary-color);
   }
 
   &:disabled {
-    background-color: #f0f0f0;
-    color: #cccccc;
-    border-color: #cccccc;
+    background-color: var(--secondary-color-hover);
+    color: var(--secondary-color-hover);
     cursor: not-allowed;
   }
 }
 
 // Global styles for inputs
-
 input,
 select {
   width: 100%;
   padding: 10px 40px;
   font-size: 16px;
-  border: 1px solid #ccc;
+  border: 1px solid var(--secondary-color-hover);
   border-radius: 8px;
   box-sizing: border-box;
 
   &:focus {
-    border-color: #7aa9fa;
+    border-color: var(--primary-color-hover);
   }
 }
 
@@ -84,7 +80,6 @@ select {
 .input-suffix {
   position: absolute;
   font-size: 16px;
-  color: #333;
 }
 
 .input-prefix {
@@ -99,20 +94,4 @@ select {
 
 .mr-10 {
   margin-right: 10px;
-}
-
-.ml-10 {
-  margin-left: 10px;
-}
-
-.mb-10 {
-  margin-bottom: 10px;
-}
-
-.mt-10 {
-  margin-top: 10px;
-}
-
-.w-100 {
-  width: 100%;
 }

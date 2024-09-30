@@ -1,7 +1,8 @@
+@import url("../../../../colors.scss");
+
 .result-container {
   background-color: #ffffff;
   margin-left: 20px;
-  max-width: 500px;
 
   h3 {
     font-size: 18px;
@@ -25,8 +26,8 @@
       align-items: center;
       padding: 15px;
       border-radius: 8px;
-      background-color: #e9eef8;
-      color: #194dfa;
+      background-color: var(--accent-color);
+      color: var(--primary-color);
 
       .result-value {
         font-size: 20px;

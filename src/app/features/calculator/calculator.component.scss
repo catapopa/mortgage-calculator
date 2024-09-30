@@ -1,16 +1,24 @@
 .calculator-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   gap: 20px;
 
   app-mortgage-calculator-form,
   app-mortgage-calculator {
+    padding: 40px;
     background-color: white;
-    padding: 20px;
     border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  app-mortgage-calculator-form {
+    flex: 2;
+  }
+
+  app-mortgage-calculator {
+    flex: 1;
   }
 
   .button-group {
