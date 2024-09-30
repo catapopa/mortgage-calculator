@@ -3,15 +3,14 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 20px; /* Add space between the elements */
+  gap: 20px;
 
   app-mortgage-calculator-form,
   app-mortgage-calculator {
     background-color: white;
     padding: 20px;
-    border-radius: 8px;
+    border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    flex: 1 1 45%; /* Set the width to 45% and allow responsiveness */
   }
 
   .button-group {

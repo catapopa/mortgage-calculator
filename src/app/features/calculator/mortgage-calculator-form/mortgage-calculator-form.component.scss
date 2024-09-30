@@ -1,9 +1,16 @@
 .mortgage-form-container {
   padding: 40px;
-  border-radius: 10px;
   max-width: 800px;
   margin: 0 auto;
   background-color: white;
+
+  .title {
+    margin-bottom: 70px;
+  }
+
+  .icon {
+    width: 40px;
+  }
 
   .form-row {
     display: flex;

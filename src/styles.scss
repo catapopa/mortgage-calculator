@@ -6,7 +6,9 @@ body {
 }
 
 body {
-  background: linear-gradient(to top left, #7aa9fa, #f0f4ff);
+  background: linear-gradient(to right, transparent, #77a5fb),
+    linear-gradient(to bottom, transparent, #aed6f8);
+  background-blend-mode: multiply;
   font-family: "Helvetica", sans-serif;
 }
 
@@ -70,7 +72,7 @@ select {
   padding: 10px 40px;
   font-size: 16px;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 8px;
   box-sizing: border-box;
 
   &:focus {
