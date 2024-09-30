@@ -5,20 +5,6 @@
   margin: 0 auto;
   background-color: white;
 
-  h2 {
-    font-size: 24px;
-    font-weight: 600;
-    color: #333;
-    margin-bottom: 10px;
-  }
-
-  h3 {
-    font-size: 18px;
-    font-weight: 500;
-    color: #666;
-    margin-bottom: 30px;
-  }
-
   .form-row {
     display: flex;
     justify-content: space-between;
@@ -35,7 +21,6 @@
       label {
         display: block;
         font-size: 14px;
-        font-weight: 500;
         color: #555;
         margin-bottom: 8px;
 
@@ -50,41 +35,11 @@
         display: flex;
         align-items: center;
         position: relative;
-
-        .input-group-prefix,
-        .input-group-suffix {
-          position: absolute;
-          font-size: 16px;
-          color: #333;
-        }
-
-        .input-group-prefix {
-          left: 10px;
-        }
-
-        .input-group-suffix {
-          right: 10px;
-        }
-
-        input,
-        select {
-          width: 100%;
-          padding: 10px 40px;
-          font-size: 16px;
-          border: 1px solid #ccc;
-          border-radius: 5px;
-          box-sizing: border-box;
-
-          &:focus {
-            border-color: #7aa9fa;
-            outline: none;
-          }
-        }
       }
     }
 
     .interest-input {
-      width: 50%;
+      width: 48%;
     }
   }
 
@@ -104,24 +59,5 @@
       margin-right: 0;
       margin-bottom: 20px;
     }
-  }
-}
-
-button.primary-button {
-  background-color: #194dfa;
-  color: white;
-  padding: 10px 20px;
-  font-size: 16px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-
-  &:hover {
-    background-color: #143dbf;
-  }
-
-  &:disabled {
-    background-color: #cccccc;
-    cursor: not-allowed;
   }
 }

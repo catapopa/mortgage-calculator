@@ -16,7 +16,7 @@ export class MortgageCalculatorFormComponent {
     interestRate: null,
   };
 
-  repaymentPeriods: number[] = [10, 15, 20, 25, 30];
+  readonly repaymentPeriods: number[] = [10, 15, 20, 25, 30];
 
   onSubmit(form: any) {
     if (form.valid) {

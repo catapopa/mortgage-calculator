@@ -7,7 +7,7 @@ import { CalculatorComponent } from './features/calculator/calculator.component'
 import { MortgageCalculatorFormComponent } from './features/calculator/mortgage-calculator-form/mortgage-calculator-form.component';
 import { MortgageCalculatorComponent } from './features/calculator/mortgage-calculator/mortgage-calculator.component';
 import { MortgageCalculatorService } from './services/mortgage-calculator.service';
-import { KeyValuePipe } from '@angular/common';
+import { CommonModule, KeyValuePipe } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -16,7 +16,7 @@ import { KeyValuePipe } from '@angular/common';
     MortgageCalculatorFormComponent,
     MortgageCalculatorComponent,
   ],
-  imports: [BrowserModule, FormsModule, KeyValuePipe],
+  imports: [CommonModule, BrowserModule, FormsModule, KeyValuePipe],
   providers: [MortgageCalculatorService],
   bootstrap: [AppComponent],
 })
