@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
@@ -18,6 +18,7 @@ import { CommonModule, KeyValuePipe } from '@angular/common';
   ],
   imports: [CommonModule, BrowserModule, FormsModule, KeyValuePipe],
   providers: [MortgageCalculatorService],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
