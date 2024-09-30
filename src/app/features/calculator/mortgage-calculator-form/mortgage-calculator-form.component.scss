@@ -1,93 +1,127 @@
 .mortgage-form-container {
-  max-width: 500px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #f5f7fc;
+  padding: 40px;
   border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: white;
 
-  h2,
-  h3 {
-    text-align: center;
-    margin-bottom: 20px;
+  h2 {
+    font-size: 24px;
+    font-weight: 600;
     color: #333;
+    margin-bottom: 10px;
   }
 
-  .form-group {
+  h3 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #666;
+    margin-bottom: 30px;
+  }
+
+  .form-row {
+    display: flex;
+    justify-content: space-between;
     margin-bottom: 20px;
 
-    label {
-      display: block;
-      margin-bottom: 5px;
-      font-weight: bold;
-      color: #555;
-    }
+    .form-group {
+      flex: 1;
+      margin-right: 20px;
 
-    .input-group {
-      display: flex;
-      align-items: center;
-
-      .input-group-prefix,
-      .input-group-suffix {
-        background-color: #e9ecef;
-        border: 1px solid #ccc;
-        border-right: 0;
-        padding: 10px;
-        font-size: 1rem;
-        border-radius: 5px 0 0 5px;
-        color: #555;
+      &:last-child {
+        margin-right: 0;
       }
 
-      input {
-        width: 100%;
-        padding: 10px;
-        font-size: 1rem;
-        border: 1px solid #ccc;
-        border-left: 0;
-        border-radius: 0 5px 5px 0;
+      label {
+        display: block;
+        font-size: 14px;
+        font-weight: 500;
+        color: #555;
+        margin-bottom: 8px;
 
-        &::placeholder {
-          color: #888;
+        .required {
+          color: gray;
+          font-size: 12px;
+          margin-left: 5px;
         }
       }
 
-      .input-group-suffix {
-        background-color: #e9ecef;
-        border: 1px solid #ccc;
-        border-left: 0;
-        padding: 10px;
-        font-size: 1rem;
-        border-radius: 0 5px 5px 0;
-        color: #555;
+      .input-group {
+        display: flex;
+        align-items: center;
+        position: relative;
+
+        .input-group-prefix,
+        .input-group-suffix {
+          position: absolute;
+          font-size: 16px;
+          color: #333;
+        }
+
+        .input-group-prefix {
+          left: 10px;
+        }
+
+        .input-group-suffix {
+          right: 10px;
+        }
+
+        input,
+        select {
+          width: 100%;
+          padding: 10px 40px;
+          font-size: 16px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          box-sizing: border-box;
+
+          &:focus {
+            border-color: #7aa9fa;
+            outline: none;
+          }
+        }
       }
     }
+
+    .interest-input {
+      width: 50%;
+    }
   }
 
-  .error {
-    color: red;
-    font-size: 0.85rem;
-    margin-top: 5px;
+  .submit-container {
+    display: flex;
+    justify-content: flex-end;
   }
 
-  .submit-button {
-    width: 100%;
-    padding: 12px;
-    background-color: #007bff;
-    color: white;
-    font-size: 1rem;
-    font-weight: bold;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+  @media (max-width: 768px) {
+    padding: 20px;
 
-    &:hover {
-      background-color: #0056b3;
+    .form-row {
+      flex-direction: column;
     }
 
-    &:disabled {
-      background-color: #ccc;
-      cursor: not-allowed;
+    .form-group {
+      margin-right: 0;
+      margin-bottom: 20px;
     }
+  }
+}
+
+button.primary-button {
+  background-color: #194dfa;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #143dbf;
+  }
+
+  &:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
   }
 }

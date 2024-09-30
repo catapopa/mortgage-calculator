@@ -1,18 +1,36 @@
-.mortgage-app {
+.calculator-container {
   display: flex;
+  flex-wrap: wrap; // responsiveness on smaller screens
   justify-content: space-between;
   padding: 20px;
 
-  app-mortgage-calculator {
-    flex: 0.6; /* Adjust based on preference */
+  .mortgage-form-container {
+    // flex: 1 1 45%; // Take up 45% of the width for form on larger screens
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
 
-  app-mortgage-result {
-    flex: 0.4; /* Result component */
-    margin-left: 20px; /* Space between form and result */
-    padding: 20px;
+  .mortgage-result-container {
+    // flex: 1 1 45%; // Take up 45% of the width for results on larger screens
     background-color: white;
-    border-radius: 15px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  // Responsive Design for Small Screens
+  @media (max-width: 768px) {
+    .mortgage-form-container,
+    .mortgage-result-container {
+      flex: 1 1 100%; // Full width on smaller screens
+    }
+  }
+
+  .button-group {
+    // display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
   }
 }

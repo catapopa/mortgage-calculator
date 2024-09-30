@@ -8,10 +8,15 @@ import { MortgageCalculatorService } from 'src/app/services/mortgage-calculator.
   styleUrls: ['./calculator.component.scss'],
 })
 export class CalculatorComponent {
+  mortgageForm: any;
+  goBack() {
+    throw new Error('Method not implemented.');
+  }
   mortgageData: any;
   monthlyPayment: number = 0;
   debtToIncome: number = 0;
   loanToValue: number = 0;
+  term: number = 0;
 
   constructor(private mortgageService: MortgageCalculatorService) {}
 
@@ -36,5 +41,7 @@ export class CalculatorComponent {
       data.borrowingAmount,
       data.purchasePrice
     );
+
+    this.term = data.repaymentPeriod;
   }
 }
