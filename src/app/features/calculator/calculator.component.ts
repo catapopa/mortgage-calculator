@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { Mortgage } from 'src/app/models/mortgage';
 import { MortgageCalculatorService } from 'src/app/services/mortgage-calculator.service';
 
 @Component({
@@ -9,9 +8,6 @@ import { MortgageCalculatorService } from 'src/app/services/mortgage-calculator.
 })
 export class CalculatorComponent {
   mortgageForm: any;
-  goBack() {
-    throw new Error('Method not implemented.');
-  }
   mortgageData: any;
   monthlyPayment: number = 0;
   debtToIncome: number = 0;
@@ -43,5 +39,13 @@ export class CalculatorComponent {
     );
 
     this.term = data.repaymentPeriod;
+  }
+
+  goBack() {
+    throw new Error('Method not implemented.');
+  }
+
+  nextStep() {
+    throw new Error('Method not implemented.');
   }
 }

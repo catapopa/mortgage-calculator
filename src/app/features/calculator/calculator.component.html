@@ -1,23 +1,17 @@
 <div class="calculator-container">
-  <div>
-    <div class="mortgage-form-container">
-      <app-mortgage-calculator-form
-        (mortgageData)="handleMortgageData($event)"
-      />
-    </div>
-    <div class="button-group">
-      <button type="button" class="secondary-button mr-10" (click)="goBack()">
-        Go Back
-      </button>
-      <button type="submit" class="primary-button">Next Step</button>
-    </div>
-  </div>
-  <div class="mortgage-result-container">
-    <app-mortgage-calculator
-      [monthlyPayment]="monthlyPayment"
-      [debtToIncome]="debtToIncome"
-      [loanToValue]="loanToValue"
-      [term]="term"
-    />
+  <app-mortgage-calculator-form (mortgageData)="handleMortgageData($event)" />
+  <app-mortgage-calculator
+    [monthlyPayment]="monthlyPayment"
+    [debtToIncome]="debtToIncome"
+    [loanToValue]="loanToValue"
+    [term]="term"
+  />
+  <div class="button-group">
+    <button type="button" class="secondary-button mr-10" (click)="goBack()">
+      Go Back
+    </button>
+    <button type="submit" class="primary-button" (click)="nextStep()">
+      Next Step
+    </button>
   </div>
 </div>
