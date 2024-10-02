@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Output } from '@angular/core';
+import { Mortgage } from 'src/app/models/mortgage';
 
 @Component({
   selector: 'app-mortgage-calculator-form',
@@ -8,7 +9,7 @@ import { Component, EventEmitter, Output } from '@angular/core';
 export class MortgageCalculatorFormComponent {
   @Output() mortgageData = new EventEmitter<any>();
 
-  mortgage = {
+  mortgage: Mortgage = {
     borrowingAmount: null,
     purchasePrice: null,
     repaymentPeriod: null,
