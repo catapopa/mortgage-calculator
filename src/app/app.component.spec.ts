@@ -3,6 +3,7 @@ import { AppComponent } from './app.component';
 import { CalculatorComponent } from './features/calculator/calculator.component';
 import { MortgageCalculatorFormComponent } from './features/calculator/mortgage-calculator-form/mortgage-calculator-form.component';
 import { MortgageCalculatorComponent } from './features/calculator/mortgage-calculator/mortgage-calculator.component';
+import { FormsModule } from '@angular/forms';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
@@ -13,6 +14,7 @@ describe('AppComponent', () => {
         CalculatorComponent,
         MortgageCalculatorFormComponent,
       ],
+      imports: [FormsModule],
     }).compileComponents();
   });
 

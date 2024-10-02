@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { MortgageCalculatorFormComponent } from './mortgage-calculator-form.component';
+import { FormsModule } from '@angular/forms';
 
 describe('MortgageCalculatorFormComponent', () => {
   let component: MortgageCalculatorFormComponent;
@@ -8,7 +9,8 @@ describe('MortgageCalculatorFormComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [MortgageCalculatorFormComponent]
+      declarations: [MortgageCalculatorFormComponent],
+      imports: [FormsModule],
     });
     fixture = TestBed.createComponent(MortgageCalculatorFormComponent);
     component = fixture.componentInstance;

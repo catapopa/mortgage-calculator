@@ -16,9 +16,9 @@ import { CommonModule, KeyValuePipe } from '@angular/common';
     MortgageCalculatorFormComponent,
     MortgageCalculatorComponent,
   ],
-  imports: [CommonModule, BrowserModule, FormsModule, KeyValuePipe],
+  imports: [CommonModule, BrowserModule, FormsModule],
   providers: [MortgageCalculatorService],
-  schemas: [CUSTOM_ELEMENTS_SCHEMA],
+  // schemas: [CUSTOM_ELEMENTS_SCHEMA],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

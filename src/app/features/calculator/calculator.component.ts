@@ -12,7 +12,7 @@ export class CalculatorComponent {
   monthlyPayment: number = 0;
   debtToIncome: number = 0;
   loanToValue: number = 0;
-  term: number = 0;
+  repaymentPeriod: number = 0;
 
   constructor(private mortgageService: MortgageCalculatorService) {}
 
@@ -38,7 +38,7 @@ export class CalculatorComponent {
       data.purchasePrice
     );
 
-    this.term = data.repaymentPeriod;
+    this.repaymentPeriod = data.repaymentPeriod;
   }
 
   goBack() {
