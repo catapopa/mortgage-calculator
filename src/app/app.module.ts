@@ -8,6 +8,7 @@ import { MortgageCalculatorFormComponent } from './features/calculator/mortgage-
 import { MortgageCalculatorComponent } from './features/calculator/mortgage-calculator/mortgage-calculator.component';
 import { MortgageCalculatorService } from './services/mortgage-calculator.service';
 import { CommonModule } from '@angular/common';
+import { OnlyNumberDirective } from './directives/only-number.directive';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { CommonModule } from '@angular/common';
     CalculatorComponent,
     MortgageCalculatorFormComponent,
     MortgageCalculatorComponent,
+    OnlyNumberDirective,
   ],
   imports: [CommonModule, BrowserModule, FormsModule],
   providers: [MortgageCalculatorService],

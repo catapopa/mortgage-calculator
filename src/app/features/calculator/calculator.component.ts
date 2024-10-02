@@ -19,7 +19,6 @@ export class CalculatorComponent {
   handleMortgageData(data: any) {
     this.mortgageData = data;
 
-    // Call the service to perform calculations
     this.monthlyPayment = this.mortgageService.calculateMonthlyPayment(
       data.borrowingAmount,
       data.interestRate,
@@ -28,9 +27,7 @@ export class CalculatorComponent {
 
     this.debtToIncome = this.mortgageService.calculateDebtToIncome(
       data.borrowingAmount,
-      data.grossIncome,
-      data.interestRate,
-      data.repaymentPeriod
+      data.grossIncome
     );
 
     this.loanToValue = this.mortgageService.calculateLoanToValue(

@@ -15,6 +15,8 @@
           <input
             name="borrowingAmount"
             [(ngModel)]="mortgage.borrowingAmount"
+            min="0"
+            appOnlyNumber
             type="number"
             required
           />
@@ -28,6 +30,8 @@
           <input
             name="purchasePrice"
             [(ngModel)]="mortgage.purchasePrice"
+            min="0"
+            appOnlyNumber
             type="number"
             required
           />
@@ -54,6 +58,8 @@
           <input
             name="grossIncome"
             [(ngModel)]="mortgage.grossIncome"
+            min="0"
+            appOnlyNumber
             type="number"
             required
           />
@@ -66,6 +72,8 @@
           <input
             name="interestRate"
             [(ngModel)]="mortgage.interestRate"
+            min="0"
+            appOnlyNumber
             type="number"
             step="0.01"
             required
