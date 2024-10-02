@@ -11,15 +11,15 @@
   <div class="result-group">
     <div class="result-item">
       <span class="result-value">{{ loanToValue | number : "1.2-2" }}x</span>
-      <span>Loan to Value</span>
+      <span class="result-text">Loan to Value</span>
     </div>
     <div class="result-item">
       <span class="result-value">{{ debtToIncome | number : "1.2-2" }}%</span>
-      <span>Debt to Income</span>
+      <span class="result-text">Debt to Income</span>
     </div>
     <div class="result-item">
-      <span class="result-value">{{ repaymentPeriod }} (Years)</span>
-      <span>Term</span>
+      <span class="result-value">{{ repaymentPeriod }}</span>
+      <span class="result-text">Term (Years)</span>
     </div>
   </div>
 

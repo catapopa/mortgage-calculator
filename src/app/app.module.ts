@@ -1,4 +1,4 @@
-import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
@@ -7,7 +7,7 @@ import { CalculatorComponent } from './features/calculator/calculator.component'
 import { MortgageCalculatorFormComponent } from './features/calculator/mortgage-calculator-form/mortgage-calculator-form.component';
 import { MortgageCalculatorComponent } from './features/calculator/mortgage-calculator/mortgage-calculator.component';
 import { MortgageCalculatorService } from './services/mortgage-calculator.service';
-import { CommonModule, KeyValuePipe } from '@angular/common';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -18,7 +18,6 @@ import { CommonModule, KeyValuePipe } from '@angular/common';
   ],
   imports: [CommonModule, BrowserModule, FormsModule],
   providers: [MortgageCalculatorService],
-  // schemas: [CUSTOM_ELEMENTS_SCHEMA],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
