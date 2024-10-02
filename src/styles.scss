@@ -1,4 +1,5 @@
 @import url("colors.scss");
+@import "@angular/material/prebuilt-themes/indigo-pink.css";
 
 body {
   height: 100%;
@@ -103,4 +104,16 @@ select {
 // Global styles for margins
 .mr-10 {
   margin-right: 10px;
+}
+
+.mr-5 {
+  margin-right: 5px;
+}
+
+// Global styles for icons
+.medium-icon {
+  font-size: 16px;
+  width: 16px !important;
+  height: 16px !important;
+  color: gray;
 }

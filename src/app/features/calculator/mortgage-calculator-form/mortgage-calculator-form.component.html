@@ -9,7 +9,15 @@
   <form #mortgageForm="ngForm" (ngSubmit)="onSubmit(mortgageForm)">
     <div class="form-grid">
       <div class="form-group">
-        <label> Borrowing Amount <span class="required">Required</span> </label>
+        <label>
+          <mat-icon
+            class="medium-icon mr-5"
+            fontIcon="help"
+            matTooltip="Total amount you wish to borrow."
+            matTooltipPosition="above"
+          />
+          <span> Borrowing Amount </span> <span class="required">Required</span>
+        </label>
         <div class="input-group">
           <span class="input-prefix">€</span>
           <input
@@ -24,7 +32,15 @@
       </div>
 
       <div class="form-group">
-        <label> Purchase Price <span class="required">Required</span> </label>
+        <label>
+          <mat-icon
+            class="medium-icon mr-5"
+            fontIcon="help"
+            matTooltip="Price of the property you want to buy."
+            matTooltipPosition="above"
+          />
+          <span> Purchase Price </span><span class="required">Required</span>
+        </label>
         <div class="input-group">
           <span class="input-prefix">€</span>
           <input
@@ -39,7 +55,15 @@
       </div>
 
       <div class="form-group">
-        <label> Repayment Period <span class="required">Required</span> </label>
+        <label>
+          <mat-icon
+            class="medium-icon mr-5"
+            fontIcon="help"
+            matTooltip="Number of years to repay the mortgage."
+            matTooltipPosition="above"
+          />
+          <span> Repayment Period </span> <span class="required">Required</span>
+        </label>
         <select
           name="repaymentPeriod"
           [(ngModel)]="mortgage.repaymentPeriod"
@@ -52,7 +76,15 @@
       </div>
 
       <div class="form-group">
-        <label> Gross Income <span class="required">Required</span> </label>
+        <label>
+          <mat-icon
+            class="medium-icon mr-5"
+            fontIcon="help"
+            matTooltip="Your total income before taxes."
+            matTooltipPosition="above"
+          />
+          <span> Gross Income </span> <span class="required">Required</span>
+        </label>
         <div class="input-group">
           <span class="input-prefix">€</span>
           <input
@@ -67,7 +99,16 @@
       </div>
 
       <div class="form-group">
-        <label> Interest Rate <span class="required">Required</span> </label>
+        <label>
+          <mat-icon
+            class="medium-icon mr-5"
+            fontIcon="help"
+            matTooltip="Percentage cost of the loan."
+            matTooltipPosition="above"
+          />
+          <span> Interest Rate</span>
+          <span class="required">Required</span>
+        </label>
         <div class="input-group interest-input">
           <input
             name="interestRate"

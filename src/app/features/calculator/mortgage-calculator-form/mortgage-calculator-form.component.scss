@@ -16,7 +16,8 @@
 
   .form-group {
     label {
-      display: block;
+      display: flex;
+      align-items: center;
       font-size: 14px;
       margin-bottom: 8px;
 
